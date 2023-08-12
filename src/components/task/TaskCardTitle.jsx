@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const TaskCardTitle = () => {
 
   const [isClick, setIsClick] = useState(false);
-  const [inputCardTitle, setInputCardTitle] = useState("TEST");
+  const [inputCardTitle, setInputCardTitle] = useState("タイトル");
 
   const handleClick = () => {
     setIsClick(true);
@@ -24,7 +24,6 @@ export const TaskCardTitle = () => {
   const handleBlur = () => {
     setIsClick(false);
   };
-
 
   return (
     <div onClick={handleClick} className="taskCardTitleInputArea">
